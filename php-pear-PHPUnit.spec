@@ -1,7 +1,7 @@
 Summary:	Regression testing framework for unit tests
 Name:		php-pear-PHPUnit
 Version:	3.0.6
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	PHP License
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
@@ -222,7 +222,7 @@ install -m0644 PHPUnit-%{version}/PHPUnit/Tests/_files/TornDown5.php %{buildroot
 install -m0644 PHPUnit-%{version}/PHPUnit/Tests/_files/TornDown6.php %{buildroot}%{_datadir}/pear/PHPUnit/Tests/_files/TornDown6.php
 install -m0644 PHPUnit-%{version}/PHPUnit/Tests/_files/WasRun.php %{buildroot}%{_datadir}/pear/PHPUnit/Tests/_files/WasRun.php
 install -m0644 PHPUnit-%{version}/PHPUnit/Tests/AllTests.php %{buildroot}%{_datadir}/pear/PHPUnit/Tests/AllTests.php
-install -m0644 PHPUnit-%{version}/PHPUnit/Tests/TestConfiguration.php.dist %{buildroot}%{_datadir}/pear/PHPUnit/Tests/TestConfiguration.php.dist
+install -m0644 PHPUnit-%{version}/PHPUnit/Tests/TestConfiguration.php.dist %{buildroot}%{_datadir}/pear/PHPUnit/Tests/TestConfiguration.php
 install -m0644 PHPUnit-%{version}/PHPUnit/TextUI/Command.php %{buildroot}%{_datadir}/pear/PHPUnit/TextUI/Command.php
 install -m0644 PHPUnit-%{version}/PHPUnit/TextUI/ResultPrinter.php %{buildroot}%{_datadir}/pear/PHPUnit/TextUI/ResultPrinter.php
 install -m0644 PHPUnit-%{version}/PHPUnit/TextUI/TestRunner.php %{buildroot}%{_datadir}/pear/PHPUnit/TextUI/TestRunner.php
@@ -528,7 +528,7 @@ rm -rf %{buildroot}
 %{_datadir}/pear/PHPUnit/Tests/_files/TornDown6.php
 %{_datadir}/pear/PHPUnit/Tests/_files/WasRun.php
 %{_datadir}/pear/PHPUnit/Tests/AllTests.php
-%{_datadir}/pear/PHPUnit/Tests/TestConfiguration.php.dist
+%{_datadir}/pear/PHPUnit/Tests/TestConfiguration.php
 %{_datadir}/pear/PHPUnit/TextUI/Command.php
 %{_datadir}/pear/PHPUnit/TextUI/ResultPrinter.php
 %{_datadir}/pear/PHPUnit/TextUI/TestRunner.php
