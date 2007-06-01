@@ -1,7 +1,7 @@
 Summary:	Regression testing framework for unit tests
 Name:		php-pear-PHPUnit
 Version:	3.0.6
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	PHP License
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
@@ -11,7 +11,7 @@ Requires(preun): php-pear hping2
 Requires:	hping2
 Requires:	php-cli >= 3:5.2.1
 Requires:	php-pear
-Requires:	php-xdebug
+#Requires:	php-xdebug
 BuildArch:	noarch
 BuildRequires:	dos2unix
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
