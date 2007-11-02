@@ -27,7 +27,7 @@ implements unit tests in PHP. This is the version to be used with PHP 5.
 %prep
 
 %setup -q -c 
-cp ../package.xml PHPUnit-%{version}/PHPUnit.xml
+cp package.xml PHPUnit-%{version}/PHPUnit.xml
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type f -perm 0555 -exec chmod 755 {} \;
@@ -46,7 +46,6 @@ find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix
 rm -rf %{buildroot}
 
 pushd PHPUnit-%{version}
-cp ../package.xml .
 #pear channel-discover pear.phpunit.de
 pear install --nodeps --force --ignore-errors --packagingroot %{buildroot} PHPUnit.xml
 popd
