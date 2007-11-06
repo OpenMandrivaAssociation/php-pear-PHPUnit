@@ -14,10 +14,12 @@ Requires(preun): php-pear hping2
 Requires:	hping2
 Requires:	php-cli >= 3:5.2.1
 Requires:	php-pear
+Requires:	php-channel-phpunit
 #Requires:	php-xdebug
 BuildArch:	noarch
 BuildRequires:	php-pear
 BuildRequires:	dos2unix
+BuildRequires:	php-channel-phpunit
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
