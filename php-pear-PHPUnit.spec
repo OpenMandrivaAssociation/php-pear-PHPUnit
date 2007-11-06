@@ -46,7 +46,7 @@ find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix
 rm -rf %{buildroot}
 
 pushd PHPUnit-%{version}
-pear channel-discover pear.phpunit.de
+#pear channel-discover pear.phpunit.de
 pear install --nodeps --force --ignore-errors --packagingroot %{buildroot} PHPUnit.xml
 popd
 
