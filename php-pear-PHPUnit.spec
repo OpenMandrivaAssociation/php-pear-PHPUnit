@@ -20,7 +20,6 @@ BuildArch:	noarch
 BuildRequires:	php-pear
 BuildRequires:	dos2unix
 BuildRequires:	php-channel-phpunit
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 PHPUnit is a regression testing framework used by the developer who
