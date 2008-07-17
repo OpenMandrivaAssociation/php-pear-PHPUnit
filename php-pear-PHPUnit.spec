@@ -4,7 +4,7 @@
 Summary:	Regression testing framework for unit tests
 Name:		php-pear-PHPUnit
 Version:	3.1.9
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	PHP License
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
@@ -20,7 +20,7 @@ BuildArch:	noarch
 BuildRequires:	php-pear
 BuildRequires:	dos2unix
 BuildRequires:	php-channel-phpunit
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 PHPUnit is a regression testing framework used by the developer who
