@@ -3,8 +3,8 @@
 
 Summary:	Regression testing framework for unit tests
 Name:		php-pear-PHPUnit
-Version:	3.1.9
-Release:	%mkrel 2
+Version:	3.3.8
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
@@ -18,7 +18,6 @@ Requires:	php-channel-phpunit
 #Requires:	php-xdebug
 BuildArch:	noarch
 BuildRequires:	php-pear
-BuildRequires:	dos2unix
 BuildRequires:	php-channel-phpunit
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -38,9 +37,6 @@ find . -type f -perm 0444 -exec chmod 644 {} \;
 for i in `find . -type d -name CVS` `find . -type f -name .cvs\*` `find . -type f -name .#\*`; do
     if [ -e "$i" ]; then rm -rf $i; fi >&/dev/null
 done
-
-# strip away annoying ^M
-find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix -U
 
 %build
 
@@ -98,8 +94,8 @@ fi
 rm -rf %{buildroot}
 
 %files
-%defattr(0644,root,root,0755)
-%attr(0755,root,root) %{_bindir}/phpunit
+%defattr(-,root,root)
+%{_bindir}/phpunit
 %{_datadir}/pear/tests/PHPUnit
 %{_datadir}/pear/docs/PHPUnit
 %{_datadir}/pear/PHPUnit
