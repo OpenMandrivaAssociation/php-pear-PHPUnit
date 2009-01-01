@@ -4,7 +4,7 @@
 Summary:	Regression testing framework for unit tests
 Name:		php-pear-PHPUnit
 Version:	3.3.8
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	PHP License
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
