@@ -13,8 +13,10 @@ Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-cli >= 3:5.2.1
 Requires:	php-pear
+Requires:	php-channel-phpunit
 BuildArch:	noarch
 BuildRequires:	php-pear
+BuildRequires:	php-channel-phpunit
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
