@@ -5,7 +5,7 @@
 Summary: 	The PHP Unit Testing framework
 Name: 		php-pear-%{upstream_name}
 Version: 	3.6.10
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 License: 	BSD
 Group: 		Development/PHP
 Source0: 	http://pear.phpunit.de/get/PHPUnit-%{version}.tgz
