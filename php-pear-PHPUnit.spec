@@ -17,7 +17,7 @@ Requires:	php-pear-Text_Template >= 1.1.1
 Requires:	php-pear-PHP_CodeCoverage >= 1.1.0
 Requires:	php-pear-PHP_Timer >= 1.0.1
 Requires:	PHPUnit_MockObject >= 1.1.0
-Requires:	php-symphony-YAML >= 1.0.2
+Requires:	php-symfony-YAML >= 1.0.2
 Requires:	php-pear >= 1.9.4
 Requires: 	php-channel-phpunit
 BuildArch: 	noarch
