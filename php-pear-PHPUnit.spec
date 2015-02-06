@@ -6,7 +6,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	3.7.31
-Release:	1
+Release:	2
 Summary:	Regression testing framework for unit tests
 
 License:	BSD License
