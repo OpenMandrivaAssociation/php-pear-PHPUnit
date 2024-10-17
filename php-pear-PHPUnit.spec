@@ -11,7 +11,7 @@ Summary:	Regression testing framework for unit tests
 
 License:	BSD License
 Group:		Development/PHP
-URL:		http://www.phpunit.de/
+URL:		https://www.phpunit.de/
 Source0:	http://pear.phpunit.de/get/PHPUnit-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
